@@ -13,17 +13,16 @@ class Solution:
         self.s = s
         self.subArrays = list()
     def subString(self):
-        n = len(self.s)
-        subArray = list()
+        
         for i in range(0, len(self.s)):
-            for j in range(0, n - i):
-                for k in range(i, i + j + 1):
-                    # print(self.s[k], end=" ")
+            subArray = list()
+            for j in range(i, len(self.s)):
+                for k in range(i, j+1):
                     subArray.append(self.s[k])
-        self.subArrays.append(subArray)
-                # print("\n", end="")
+                # subArray.append(self.s[i:j+1])
+            self.subArrays.append(subArray)
         return self.subArrays
         
-my_solution = Solution("abccb")
+my_solution = Solution("abc")
 print(my_solution.subString())
 

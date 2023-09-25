@@ -1,5 +1,7 @@
 # sample_input = [-1,2,3,1,-3,2]    size=2
 
+# Brute force Time complexity = O(N^3)
+
 def hashFunction(string_key: str, bucket_num):
     hash_var = 0
     hash_var += ord(string_key)
