@@ -1,0 +1,10 @@
+{
+  "name": "Python",
+  "type": "python",
+  "stopOnEntry": false,
+  "request": "launch",
+  "python": "${config.python.pythonPath}",
+  "program": "${file}",
+  "cwd": "${fileDirname}",
+  "env": { "PYTHONPATH": "${workspaceFolder}${pathSeparator}${env:PYTHONPATH}" }
+}

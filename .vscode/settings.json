@@ -1,0 +1,24 @@
+{
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.formatOnSave": true,
+  },
+
+  "python.defaultInterpreterPath": "/usr/lib/python3.11/Python-3.11.5",
+  "python.pipenvPath": "${workspaceFolder}/venv_problem_solving/lib/python3.11/site-packages/pip",
+  
+
+  "files.associations": {
+    ".bash_prompt": "shellscript",
+    "iostream": "cpp"
+  },
+  "python.testing.unittestArgs": [
+    "-v",
+    "-s",
+    "${workspaceFolder}/.env/Hash_Table/test_folder/",
+    "-p",
+    "test_Hashtable.py"
+  ],
+  "python.testing.pytestEnabled": false,
+  "python.testing.unittestEnabled": true,
+}
